@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/style.css">
     <title>My Learning Portfolio </title>
 </head>
@@ -13,86 +13,231 @@
 <body class="bg-secondary" data-bs-spy="scroll" data-bs-target="#navbarTogglerDemo02" tabindex="0">
 
     <nav class="navbar sticky-top bg-1 fg-2">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#about"><h2 class="text-uppercase">Tanatepon's Portfolio</h2></a>
-    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon" aria-hidden="true"></span>
-    </button>
-    <dialog class="drawer drawer-end" tabindex="-1" id="navbarTogglerDemo02" aria-labelledby="navbarTogglerDemo02Label">
-      <div class="drawer-header">
-        <h5 class="drawer-title" id="navbarTogglerDemo02Label">Menu</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
-      </div>
-      <div class="drawer-body">
-        <ul class="navbar-nav me-auto mb-2">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#about">About Me</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skill">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#portfolio">My Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contrac">My Contrac</a></li>
-        </ul>
-      </div>
-    </dialog>
-  </div>
-</nav>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#about">
+                <h2 class="text-uppercase">Tanatepon's Portfolio</h2>
+            </a>
+            <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer"
+                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+            <dialog class="drawer drawer-end" tabindex="-1" id="navbarTogglerDemo02"
+                aria-labelledby="navbarTogglerDemo02Label">
+                <div class="drawer-header">
+                    <h5 class="drawer-title" id="navbarTogglerDemo02Label">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+                </div>
+                <div class="drawer-body">
+                    <ul class="navbar-nav me-auto mb-2">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">My Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contrac">My Contrac</a></li>
+                    </ul>
+                </div>
+            </dialog>
+        </div>
+    </nav>
 
     <main class="container my-5">
         <!--About Me-->
         <section id="about" class="row align-items-center mb-5 bg-white p-4 rounded shadow-sm mx-0">
-            
-            <div class="col-4">
-                <img src="media/Tanatepon_pic.JPG" class="profile-img img-fluid rounded-circle shadow" alt="My Picture">
+
+            <div class="col-3">
+                <img src="media/Tanatepon_pic.JPG" class="profile-img img-thumbnail img-fluid rounded-circle shadow"
+                    alt="My Picture">
             </div>
 
-            <div class="col-8">
+            <div class="col-9">
                 <h1 class="fw-bold fg-primary ">นายธเนศพล คงประเวช (แฟ้ม)</h1>
                 <p class="fg-secondary">รหัสนักศึกษา : 6909617729</p>
-                <p class="fg-black"><strong>หลักสูตร :</strong> คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยธรรมศาสตร์ สาขาวิทยาการคอมพิวเตอร์ ชั้นปีที่ 1</p>
-                <hr>
-                <p class="fg-black">สวัสดีครับ ผมมีความสนใจด้าน Programming , Software development และเทคโนโลยีใหม่ๆ ชอบในการได้เรียนรู้สิ่งใหม่ และจะพัฒนาในสิ่งต่างๆในรายวิชา CS100 ให้ดียิ่งขึ้น</p>
+                <p class="fg-black"><b>หลักสูตร :</b> คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยธรรมศาสตร์
+                    สาขาวิทยาการคอมพิวเตอร์ ชั้นปีที่ 1</p>
+                <hr class="border-2">
+                <p class="fg-black">สวัสดีครับ ผมมีความสนใจด้าน Programming , Software development และเทคโนโลยีใหม่ๆ
+                    ชอบในการได้เรียนรู้สิ่งใหม่ และจะพัฒนาในสิ่งต่างๆในรายวิชา CS100 ให้ดียิ่งขึ้น</p>
             </div>
+
         </section>
 
-        <section id="skill">
-            <h2>WHAT I BUILT.</h2>
-            งานนี้เป็นการเขียนเว็ปไซด์ <em>Learning Portfolio</em> แบบหน้าเดียว
-            <br>ไว้เก็บผลงานการแข่งกีฬาในช่วงที่ผ่านมา มีส่วนประกอบคือ รูปการแข่งกีฬา และ รายการที่แข่ง
-            <br>โดยการเปิดเว็ปไซด์จากเครื่องของตัวเองจะมีเพียงแค่ <em>Web Browser(Web Client)</em> ทำหน้าที่อ่านไฟล์
-            และประมวลผล
-            <br>โดยที่ไม่มี <em>Web server</em> เกิดขึ้น เพราะ <em>Browser</em>
-            จะทำการดึงข้อมูลจากตัวฮาร์ดดิสในเครื่องของเราโดยตรง
-            <br>โดยที่ไม่ต้องไปขอข้อมุลจาก <em>Server</em>
-        </section>
-        <section>
-            <h2 class="head">HOW I BUILT.</h2>
-            ผมเริ่มจากการลองวางแผนว่าจะใส่ข้อมูลอะไรไว้ในเว็ปบ้าง เช่น รูปควรจะอยู่ตรงไหน
-            หัวข้อในส่วนนี้ต้องเขียนอะไรบ้าง ต้องการข้อมูลอะไรเพิ่มไหม
-            <br>จากนั้นก็มาเขียนตัวโครง <em>HTML</em> แล้วก็พยายามเขียนให้ถูกต้องตามความต้องการของงาน
-            หลังจากนั้นก็ทำการ LINK CSS
-            <br>เข้ามาใน <em>HTML</em> แล้วไปทำการตกแต่งตัวเว็ปไซด์ใน <em>CSS</em> ต่อให้สวยงาม และดูน่าอ่าน
-            <br>เครื่องมือที่ใช้คือ <em>VS code</em> แหล่งข้อมูลที่ศึกษาเพิ่มเติม <em>"สไลด์อาจาย์ร"</em>
-            <em>"W3school"</em> และ <em>"AI"</em> มาช่วยในการอธิบายในส่วนที่ยังไม่เข้าใจ หรือติดขัด
-        </section>
+        <!--PortFolio-->
+        <section class="container my-5 p-4 bg-white  rounded shadow-sm">
+            <h3 id="portfolio" class="text-uppercase fg-primary"><b>Portfolio</b></h3>
+            <hr class="border-2">
 
-        <section>
-            <h2>REFLECTION.</h2>
+            <div class="row g-4">
 
-            <b class="space">ปัญหาและความท้าทายที่พบ</b>
-            <ul>
-                <li class="space">
-                    คือการที่อาจจะยังมีความไม่เข้าใจมากพอในบางคำสั่งเลยต้องหาแหล่งข้อมูลอยู่เรื่อยๆในระหว่างการทำงาน
-                    และเกิดการติดขัดอยู่หลายครั้งเลยต้องแก้ไปแก้มา</li>
-            </ul>
+                <!--Portfolio Card 1-->
+                <div class="col-12 col-lg-6">
+                    <div class="card h-100 bg-secondary bg-80">
+                        <div class="card-header bg-subtle-secondary">
+                            <h4 class="p-1 text-capitalize"><b>A2: Individual Responsive Learning Portfolio</b>
+                            </h4>
+                        </div>
+                        <div class="card-body">
+                            <p><b>Date :</b> 14 ตุลาคม 2026</p>
+                            <p>
+                                <b>Type : </b>
+                                <span class="badge bg-primary"> Course Assignment</span>
+                            </p>
+                            <p><b>Role :</b> <span class="badge bg-primary bg-50">Developer</span></p>
+                            <p>
+                                <b>Skills : </b>
+                                <span class="badge text-bg-primary">HTML</span>
+                                <span class="badge text-bg-primary">CSS</span>
+                                <span class="badge text-bg-primary">Bootstrap</span>
+                                <span class="badge text-bg-primary">Git/Github</span>
+                                <span class="badge text-bg-primary">Responsive Design</span>
+                            </p>
+                            <p class="mb-3">
+                                <b>Description :</b> เป็นการต่อยอด Website ต่อจากงาน A1 โดยการใช้ Semantic html และดึง
+                                Bootstrap มาช่วยในการตกแต่งหน้า Web page และการจัด Layout ให้เหมาะกับอุปกรณ์ขนาดต่างๆ
+                            </p>
+                            <hr class="border-2 border-white">
+                            <div class="card card-body bg-white bg-90 fg-black">
+                                <h5 class="fw-bold mb-1 fg-primary">Reflection</h5>
+                                <ul>
+                                    <li class="mb-0">
+                                        <b>What I did</b>
+                                        <p>นำ code จาก A1 มารื้อใหม่ทั้งหมด ลบ CSS อันเดิมออก ใช้แท็ก Semantic
+                                            ให้ถูกต้องและไม่จำเจ และนำ Bootstrap เข้ามาเพื่อช่วยในการจัดเรียง Layout</p>
+                                    </li>
+                                    <li class="mb-0">
+                                        <b>What I Learned</b>
+                                        <p>ช่วยให้เข้าใจการใช้ Bootstrap ได้ดียิ่งขึ้น ได้ลองใช้ class ตัวใหม่ๆ ที่ช่วยเขียน
+                                            webpage ได้ยืดหยุ่นและคล่องตัวมากยิ่งขึ้น และได้เข้าใจการใช้ GitHub ในการ Deploy
+                                            Website</p>
+                                    </li>
+                                    <li class="mb-0">
+                                        <b>Challenge</b>
+                                        <p>มีความลังเลในการที่จะเริ่มทำ เพราะไม่รู้ว่าจะเริ่มจากตรงไหนดี
+                                            แต่พอได้วางแผนก็ทำให้ไปต่อได้ ได้ลอง class
+                                            ใหม่ๆที่ไม่เคยใช้ทำให้รู้สึกท้าทายในการทำ</p>
+                                    </li>
+                                    <li class="mb-0">
+                                        <b>Next Step</b>
+                                        <p>อยากทำให้ Webpage น่าสนใจและมีลูกเล่นมากกว่านี้ เลยจะอยากจะศึกษา JavaScipt
+                                            ต่อเพื่อนำมาต่อยอด และเรียนรู้การใช้ Bootstrap
+                                            ให้ดีมากยิ่งขึ้นเพื่อที่จะทำให้ผลงานน่าใช้และสวยงามมากยิ่งขึ้น</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-auto d-flex flex-wrap gap-2">
+                                <a href="" class="btn-subtle theme-primary">Website</a>
+                                <a href="https://github.com/tanateponkon/MyLearningPortfolio_A2"
+                                    class="btn-outline theme-inverse">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <b class="space">สิ่งที่เข้าใจมากขึ้น</b>
-            <ul>
-                <li class="space">เข้าใจคำสั่งมากขึ้น และเข้าใจการทำงานของ <em>HTML</em> และ <em>CSS</em> มากขึ้น</li>
-            </ul>
-
-            <b class="space">สิ่งที่อยากปรับปรุง</b>
-            <ul>
-                <li class="space">อยากทราบคำสั่งที่ใช้ในการเขียน <em>HTML</em> และ <em>CSS</em>
-                    ให้มากขึ้นเพื่อทำให้เว็ปไซด์สวยและน่าใช้งานมากยิ่งขึ้น</li>
-            </ul>
+                <!--Portfolio Card 2-->
+                <div class="col-12 col-lg-6">
+                    <div class="card h-100 bg-secondary bg-80">
+                        <div class="card-header bg-subtle-secondary">
+                            <h4 class="p-1 text-capitalize"><b>AORUS AI Experience Campus Roadshow 2026</b></h4>
+                        </div>
+                    
+                        <div class="card-body">
+                            <p><b>Date :</b> 4 กันยายน 2026</p>
+                            <p>
+                                <b>Type : </b>
+                                <span class="badge bg-primary"> Activity</span>
+                            </p>
+                            <p><b>Role :</b> <span class="badge bg-primary bg-50">Participant</span></p>
+                            <p>
+                                <b>Skills : </b>
+                                <span class="badge text-bg-primary">AI</span>
+                                <span class="badge text-bg-primary">Hardware</span>
+                                <span class="badge text-bg-primary">Tech Trends</span>
+                            </p>
+                            <p class="mb-3">
+                                <b>Description :</b> เข้าร่วมงาน AORUS AI Experience Campus Roadshow 2026 ภายในมหาลัย
+                                มีพี่เปา IHAVECPU กับ วิทยากร มาแชร์เรื่อง AI และ trends ของเทคโนโลยี
+                                ซึ่งทำให้ได้รับความรู้และได้ร่วมสนุกกับกิจกรรม
+                            </p>
+                            <hr class="border-2 border-white">
+                            <div class="card card-body bg-white bg-90 fg-black mb-3">
+                                <h5 class="fw-bold mb-1 fg-primary">Reflection</h5>
+                                <ul>
+                                    <li class="mb-0">
+                                        <b>What I did</b>
+                                        <p>เข้าร่วมงาน AORUS AI Experience Campus Roadshow 2026 ได้พบปะพูดคุยสอบถามกับพี่เปา
+                                            IHAVECPU และ วิทยากรท่านต่างๆ</p>
+                                    </li>
+                                    <li class="mb-0">
+                                        <b>What I Learned</b>
+                                        <p>ได้เรียนรู้ในเรื่องของ AI และการทำ Local AI ใช้เอง และ trends
+                                            ของเทคโนโลยีในช่วงนี้และในภายภาคหน้า</p>
+                                    </li>
+                                    <li class="mb-0">
+                                        <b>Challenge</b>
+                                        <p>ได้ลองทำ Local AI ที่เป็นสิ่งที่ยังไม่เคยทำมาก่อน
+                                            และจับใจความในสิ่งที่วิทยากรพูดและนำมาปรับใช้กับตัวเอง</p>
+                                    </li>
+                                    <li class="mb-0">
+                                        <b>Next Step</b>
+                                        <p>ค่อยอัพเดทข่าวสารที่เกี่ยวกับ เทคโนโลยี และ AI เพื่อให้ตามข่าวสารทัน
+                                            และนำสิ่งที่ได้เรียนรู้มาปรับใช้ต่อไป </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-auto">
+                                <b>Evidence :</b>
+                                <div class="row g-3 mt-1">
+                                    <div class="col-4">
+                                        <img src="media/IMG_3403.JPG" alt="AORUS Roadshow Evidence 1"
+                                            class="evidence-img rounded border shadow-sm">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="media/IMG_3424.jpg" alt="AORUS Roadshow Evidence 2"
+                                            class="evidence-img rounded border shadow-sm">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="media/IMG_3425.jpg" alt="AORUS Roadshow Evidence 3"
+                                            class="evidence-img rounded border shadow-sm">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                </div>
+                            </section>
+                    
+                    
+                            <section>
+                                <h2 class="head">HOW I BUILT.</h2>
+                                ผมเริ่มจากการลองวางแผนว่าจะใส่ข้อมูลอะไรไว้ในเว็ปบ้าง เช่น รูปควรจะอยู่ตรงไหน
+                                หัวข้อในส่วนนี้ต้องเขียนอะไรบ้าง ต้องการข้อมูลอะไรเพิ่มไหม
+                                <br>จากนั้นก็มาเขียนตัวโครง <em>HTML</em> แล้วก็พยายามเขียนให้ถูกต้องตามความต้องการของงาน
+                                หลังจากนั้นก็ทำการ LINK CSS
+                                <br>เข้ามาใน <em>HTML</em> แล้วไปทำการตกแต่งตัวเว็ปไซด์ใน <em>CSS</em> ต่อให้สวยงาม และดูน่าอ่าน
+                                <br>เครื่องมือที่ใช้คือ <em>VS code</em> แหล่งข้อมูลที่ศึกษาเพิ่มเติม <em>"สไลด์อาจาย์ร"</em>
+                                <em>"W3school"</em> และ <em>"AI"</em> มาช่วยในการอธิบายในส่วนที่ยังไม่เข้าใจ หรือติดขัด
+                            </section>
+                    
+                            <section>
+                                <h2>REFLECTION.</h2>
+                    
+                                <b class="space">ปัญหาและความท้าทายที่พบ</b>
+                                <ul>
+                    <li class="space">
+                        คือการที่อาจจะยังมีความไม่เข้าใจมากพอในบางคำสั่งเลยต้องหาแหล่งข้อมูลอยู่เรื่อยๆในระหว่างการทำงาน
+                        และเกิดการติดขัดอยู่หลายครั้งเลยต้องแก้ไปแก้มา</li>
+                                </ul>
+                    
+                                <b class="space">สิ่งที่เข้าใจมากขึ้น</b>
+                                <ul>
+                    <li class="space">เข้าใจคำสั่งมากขึ้น และเข้าใจการทำงานของ <em>HTML</em> และ <em>CSS</em> มากขึ้น</li>
+                                </ul>
+                    
+                                <b class="space">สิ่งที่อยากปรับปรุง</b>
+                                <ul>
+                    <li class="space">อยากทราบคำสั่งที่ใช้ในการเขียน <em>HTML</em> และ <em>CSS</em>
+                        ให้มากขึ้นเพื่อทำให้เว็ปไซด์สวยและน่าใช้งานมากยิ่งขึ้น</li>
+                                </ul>
+                </div>
 
         </section>
 
