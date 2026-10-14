@@ -10,24 +10,49 @@
     <title>My Learning Portfolio </title>
 </head>
 
-<body>
-    <main>
-        <h1>My First Learning Portfolio</h1>
+<body class="bg-secondary" data-bs-spy="scroll" data-bs-target="#navbarTogglerDemo02" tabindex="0">
 
-        <div>
-            <img src="media/Tanatepon_pic.JPG" alt="รูปผมเอง!" width="400" height="500">
-        </div>
+    <nav class="navbar sticky-top bg-1 fg-2">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#about"><h2 class="text-uppercase">Tanatepon's Portfolio</h2></a>
+    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" aria-hidden="true"></span>
+    </button>
+    <dialog class="drawer drawer-end" tabindex="-1" id="navbarTogglerDemo02" aria-labelledby="navbarTogglerDemo02Label">
+      <div class="drawer-header">
+        <h5 class="drawer-title" id="navbarTogglerDemo02Label">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+      </div>
+      <div class="drawer-body">
+        <ul class="navbar-nav me-auto mb-2">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skill">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">My Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contrac">My Contrac</a></li>
+        </ul>
+      </div>
+    </dialog>
+  </div>
+</nav>
 
-        <section>
-            <h2>ABOUT ME.</h2>
-            <b>ผมชื่อ</b> ธเนศพล คงประเวช (แฟ้ม)
-            <br><b>เลขทะเบียนนักศึกษา</b> 6909617729
-            <br><b>ศึกษาอยู่ที่</b> มหาวิทยาลัยธรรมศาสตร์
-            <br><b>คณะวิทยาศาสตร์และเทคโนโลยี</b> สาขาวิทยาการคอมพิวเตอร์ ภาคปกติ
-            <br><b>ชั้นปีที่ 1</b>
+    <main class="container my-5">
+        <!--About Me-->
+        <section id="about" class="row align-items-center mb-5 bg-white p-4 rounded shadow-sm mx-0">
+            
+            <div class="col-4">
+                <img src="media/Tanatepon_pic.JPG" class="profile-img img-fluid rounded-circle shadow" alt="My Picture">
+            </div>
+
+            <div class="col-8">
+                <h1 class="fw-bold fg-primary ">นายธเนศพล คงประเวช (แฟ้ม)</h1>
+                <p class="fg-secondary">รหัสนักศึกษา : 6909617729</p>
+                <p class="fg-black"><strong>หลักสูตร :</strong> คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยธรรมศาสตร์ สาขาวิทยาการคอมพิวเตอร์ ชั้นปีที่ 1</p>
+                <hr>
+                <p class="fg-black">สวัสดีครับ ผมมีความสนใจด้าน Programming , Software development และเทคโนโลยีใหม่ๆ ชอบในการได้เรียนรู้สิ่งใหม่ และจะพัฒนาในสิ่งต่างๆในรายวิชา CS100 ให้ดียิ่งขึ้น</p>
+            </div>
         </section>
 
-        <section>
+        <section id="skill">
             <h2>WHAT I BUILT.</h2>
             งานนี้เป็นการเขียนเว็ปไซด์ <em>Learning Portfolio</em> แบบหน้าเดียว
             <br>ไว้เก็บผลงานการแข่งกีฬาในช่วงที่ผ่านมา มีส่วนประกอบคือ รูปการแข่งกีฬา และ รายการที่แข่ง
